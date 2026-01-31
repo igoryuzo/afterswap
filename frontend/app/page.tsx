@@ -416,7 +416,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6 flex justify-between items-center">
           <a href="/" className="font-mono text-lg font-bold text-cyan flex items-center gap-2">
             <span className="opacity-50">&gt;</span>
-            SwapStats
+            afterSwap
           </a>
           <div className="flex items-center gap-4">
             <a
