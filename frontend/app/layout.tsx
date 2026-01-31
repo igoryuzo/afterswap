@@ -3,13 +3,14 @@ import { Providers } from './providers'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'SwapStats Hook | Uniswap v4',
-  description: 'Real-time swap statistics for Uniswap v4 pools using hooks',
+  title: 'SwapStats | Onchain Swap Analytics for Uniswap V4',
+  description: 'Track swap statistics onchain. Volume, counts, timestamps—no indexer required.',
   openGraph: {
-    title: 'SwapStats Hook | Uniswap v4',
-    description: 'Real-time swap statistics for Uniswap v4 pools using hooks',
-    url: 'https://hook1.v4hooks.dev',
+    title: 'SwapStats | Onchain Swap Analytics for Uniswap V4',
+    description: 'Track swap statistics onchain. Volume, counts, timestamps—no indexer required.',
+    url: 'https://afterswap.v4hooks.dev',
   },
+  themeColor: '#00ffd0',
 }
 
 export default function RootLayout({
@@ -19,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen gradient-bg">
+      <body>
         <Providers>{children}</Providers>
       </body>
     </html>

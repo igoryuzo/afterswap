@@ -1,5 +1,5 @@
 {
-  "name": "hook1-swapstats",
+  "name": "afterswap-swapstats",
   "version": "0.1.0",
   "private": true,
   "scripts": {

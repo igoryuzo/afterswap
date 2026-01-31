@@ -11,7 +11,7 @@ export function ConnectButton() {
     return (
       <button
         onClick={() => disconnect()}
-        className="px-4 py-2 bg-white/10 hover:bg-white/20 rounded-xl border border-white/20 transition-all text-sm font-medium"
+        className="btn btn-secondary font-mono text-sm"
       >
         {address?.slice(0, 6)}...{address?.slice(-4)}
       </button>
@@ -21,7 +21,7 @@ export function ConnectButton() {
   return (
     <button
       onClick={() => connect({ connector: connectors[0] })}
-      className="px-4 py-2 bg-uni-pink hover:bg-uni-pink-dark rounded-xl transition-all text-sm font-medium text-white"
+      className="btn btn-primary font-mono text-sm"
     >
       Connect Wallet
     </button>

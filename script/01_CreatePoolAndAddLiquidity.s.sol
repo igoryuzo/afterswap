@@ -16,13 +16,20 @@ contract CreatePoolAndAddLiquidityScript is BaseScript, LiquidityHelpers {
     // --- Configure These ---
     /////////////////////////////////////
 
-    uint24 lpFee = 3000; // 0.30%
-    int24 tickSpacing = 60;
-    uint160 startingPrice = 2 ** 96; // Starting price, sqrtPriceX96; floor(sqrt(1) * 2^96)
+    uint24 lpFee = 1000; // 0.10% fee tier
+    int24 tickSpacing = 20; // appropriate for 0.10% fee
 
     // --- liquidity position configuration --- //
-    uint256 public token0Amount = 100e18;
-    uint256 public token1Amount = 100e18;
+    // Current market price: 1 WETH = 3,098,610 MOLT
+    // For ~$10 each side:
+    uint256 public token0Amount = 0.004 ether;  // WETH (~$10)
+    uint256 public token1Amount = 12395e18;     // MOLT (~$10 at market price: 0.004 * 3,098,610)
+
+    // Starting price: sqrtPriceX96 = sqrt(price) * 2^96
+    // price = MOLT/WETH = 3,098,610
+    // sqrt(3,098,610) = 1760.2869
+    // sqrtPriceX96 = 1760.2869 * 2^96 = 139,458,766,000,000,000,000,000,000,000,000
+    uint160 startingPrice = 139458766000000000000000000000000;
 
     // range of the position, must be a multiple of tickSpacing
     int24 tickLower;

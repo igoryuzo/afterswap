@@ -59,7 +59,7 @@ export const ADDRESSES = {
   },
   // Base Mainnet
   8453: {
-    swapStats: '0x0000000000000000000000000000000000000000' as `0x${string}`,
+    swapStats: '0x0b9bD21322063AA5e8eE09a54AeA4C90a4A08040' as `0x${string}`,
     poolManager: '0x498581fF718922c3f8e6A244956aF099B2652b2b' as `0x${string}`,
   },
 } as const
