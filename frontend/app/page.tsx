@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { useAccount, useReadContract, useWatchContractEvent, useWriteContract, useWaitForTransactionReceipt } from 'wagmi'
+import { base } from 'wagmi/chains'
 import { formatEther, parseEther, maxUint256, encodeAbiParameters, toHex, keccak256 } from 'viem'
 import { SWAPSTATS_ABI, ADDRESSES } from '@/lib/contracts'
 import { ConnectButton } from '@/components/ConnectButton'
@@ -215,6 +216,7 @@ export default function Home() {
     abi: SWAPSTATS_ABI,
     functionName: 'getPoolStats',
     args: [POOL_KEY],
+    chainId: base.id,
     query: {
       refetchInterval: 5000, // Refresh every 5s
     },
@@ -248,6 +250,7 @@ export default function Home() {
     address: addresses.swapStats,
     abi: SWAPSTATS_ABI,
     eventName: 'SwapRecorded',
+    chainId: base.id,
     onLogs(logs) {
       logs.forEach((log) => {
         if (log.args && log.transactionHash) {
