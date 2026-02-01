@@ -3,10 +3,10 @@ import { Providers } from './providers'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'SwapStats | Onchain Swap Analytics for Uniswap V4',
+  title: 'afterSwap | Onchain Swap Analytics for Uniswap V4',
   description: 'Track swap statistics onchain. Volume, counts, timestamps—no indexer required.',
   openGraph: {
-    title: 'SwapStats | Onchain Swap Analytics for Uniswap V4',
+    title: 'afterSwap | Onchain Swap Analytics for Uniswap V4',
     description: 'Track swap statistics onchain. Volume, counts, timestamps—no indexer required.',
     url: 'https://afterswap.v4hooks.dev',
   },

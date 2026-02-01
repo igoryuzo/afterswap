@@ -1,8 +1,8 @@
-# SwapStats Hook
+# afterSwap
 
 A Uniswap v4 hook that tracks real-time swap statistics for any pool — on-chain, without external indexers.
 
-**Live Demo:** [hook1.v4hooks.dev](https://hook1.v4hooks.dev)
+**Live Demo:** [afterswap.v4hooks.dev](https://afterswap.v4hooks.dev)
 
 ## What This Hook Does
 
@@ -30,7 +30,7 @@ beforeSwapReturnDelta: false  // ⛔ Never enabled (rug risk)
 ## Project Structure
 
 ```
-hook1/
+afterSwap/
 ├── src/SwapStats.sol      # The hook contract
 ├── test/SwapStats.t.sol   # Foundry tests
 ├── script/                # Deployment scripts
@@ -89,8 +89,7 @@ The frontend is configured for Vercel deployment. Connect your GitHub repo and s
 
 | Network | Address |
 |---------|---------|
-| Base Sepolia | `TBD` |
-| Base Mainnet | `TBD` |
+| Base Mainnet | `0x0b9bD21322063AA5e8eE09a54AeA4C90a4A08040` |
 
 ## Learn More
 

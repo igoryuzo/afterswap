@@ -795,7 +795,7 @@ export default function Home() {
             <div className="card">
               <h3 className="font-mono font-bold mb-3 text-cyan">Hook Permissions</h3>
               <p className="text-secondary text-sm leading-relaxed mb-4">
-                Hooks declare which lifecycle events they want to intercept. SwapStats only uses <code className="text-cyan">afterSwap</code> —
+                Hooks declare which lifecycle events they want to intercept. This hook only uses <code className="text-cyan">afterSwap</code> —
                 the minimal permission needed for read-only analytics.
               </p>
               <div className="bg-elevated rounded p-3 font-mono text-xs">
@@ -808,7 +808,7 @@ export default function Home() {
             <div className="card">
               <h3 className="font-mono font-bold mb-3 text-cyan">Return Delta</h3>
               <p className="text-secondary text-sm leading-relaxed mb-4">
-                Hooks can modify swap amounts by returning a non-zero delta. SwapStats returns <code className="text-cyan">0</code> —
+                Hooks can modify swap amounts by returning a non-zero delta. This hook returns <code className="text-cyan">0</code> —
                 it observes swaps without modifying them.
               </p>
               <div className="bg-elevated rounded p-3 font-mono text-xs">

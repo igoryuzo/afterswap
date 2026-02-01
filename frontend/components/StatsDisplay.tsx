@@ -66,7 +66,7 @@ export function StatsDisplay({ chainId, poolKey }: StatsDisplayProps) {
       <div className="card text-center py-12">
         <div className="font-mono text-xl text-yellow-400 mb-3">Hook Not Deployed</div>
         <p className="text-secondary text-sm">
-          The SwapStats hook hasn&apos;t been deployed to this network yet.
+          The afterSwap hook hasn&apos;t been deployed to this network yet.
         </p>
         <p className="text-dim text-xs mt-3 font-mono">
           Chain ID: {chainId}
